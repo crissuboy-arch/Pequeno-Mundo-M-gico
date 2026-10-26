@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream font-sans text-navy antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display font-semibold;
+  }
+  :focus-visible {
+    outline: 3px solid #2d2f5b;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-gold px-8 py-4 text-lg font-extrabold text-navy shadow-btn transition hover:translate-y-[2px] hover:shadow-[0_4px_0_#D99E1C];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border-2 border-navy bg-white px-7 py-3.5 text-lg font-extrabold text-navy transition hover:bg-sky;
+  }
+  .btn-disabled {
+    @apply inline-flex cursor-not-allowed items-center justify-center rounded-full bg-gray-200 px-8 py-4 text-lg font-extrabold text-ink;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-extrabold text-navy;
+  }
+  .container-page {
+    @apply mx-auto w-full max-w-[1200px] px-5 sm:px-10;
+  }
+  .field {
+    @apply w-full rounded-xl border-2 border-sky-deep bg-white px-4 py-3 text-base text-navy;
+  }
+}

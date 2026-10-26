@@ -1,0 +1,15 @@
+export const site = {
+  name: "Pequeno Mundo Mágico",
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://pequenomundomagico.pt").replace(/\/$/, ""),
+  slogan: "Onde a imaginação cresce e a aprendizagem ganha magia.",
+  description:
+    "eBooks infantis, livros de colorir, atividades educativas e kits digitais para crianças até aos 12 anos. Histórias com magia para ler em família.",
+  seller: {
+    name: process.env.NEXT_PUBLIC_SELLER_NAME || "[NOME OU DENOMINAÇÃO SOCIAL DO VENDEDOR]",
+    nif: process.env.NEXT_PUBLIC_SELLER_NIF || "[NIF]",
+    address: process.env.NEXT_PUBLIC_SELLER_ADDRESS || "[MORADA]",
+    email: process.env.NEXT_PUBLIC_SELLER_EMAIL || "[E-MAIL DE CONTACTO]",
+  },
+};
+
+export const hasSellerEmail = Boolean(process.env.NEXT_PUBLIC_SELLER_EMAIL);
