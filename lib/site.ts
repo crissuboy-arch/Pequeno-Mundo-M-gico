@@ -5,8 +5,8 @@ export const site = {
   description:
     "eBooks infantis, livros de colorir, atividades educativas e kits digitais para crianças até aos 12 anos. Histórias com magia para ler em família.",
   seller: {
-    name: process.env.NEXT_PUBLIC_SELLER_NAME || "[NOME OU DENOMINAÇÃO SOCIAL DO VENDEDOR]",
-    nif: process.env.NEXT_PUBLIC_SELLER_NIF || "[NIF]",
+    name: process.env.NEXT_PUBLIC_SELLER_NAME || "Ofensiva Criativa",
+    nif: process.env.NEXT_PUBLIC_SELLER_NIF || "298533634",
     address: process.env.NEXT_PUBLIC_SELLER_ADDRESS || "[MORADA]",
     email: process.env.NEXT_PUBLIC_SELLER_EMAIL || "[E-MAIL DE CONTACTO]",
   },
