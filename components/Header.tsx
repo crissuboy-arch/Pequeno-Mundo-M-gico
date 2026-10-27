@@ -18,7 +18,7 @@ export function Header() {
     <>
       <div className="flex flex-wrap items-center justify-center gap-2.5 bg-navy px-5 py-2.5 text-center text-xs font-bold text-cream sm:text-sm">
         <StarIcon size={16} />
-        <span>eBooks em PDF · Entrega digital após a compra · Pagamento seguro pela Kiwify</span>
+        <span>eBooks em PDF · Entrega digital após a compra · Pagamento seguro</span>
       </div>
       <header className="relative bg-cream">
         <div className="mx-auto flex w-full max-w-[1280px] items-center justify-between gap-6 px-5 py-4 sm:px-10 sm:py-5">

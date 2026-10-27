@@ -143,7 +143,7 @@ export default async function ProdutoPage({ params }: Params) {
             </div>
             <BuyButton product={p} withPrice className="w-full text-xl" />
             <p className="text-sm leading-relaxed text-ink">
-              Pagamento seguro pela Kiwify. A entrega é digital e feita através da Kiwify, depois de concluída a compra.
+              Pagamento seguro. A entrega é digital e automática, depois de concluída a compra.
             </p>
           </div>
         </div>
@@ -224,7 +224,7 @@ export default async function ProdutoPage({ params }: Params) {
             <span className="font-display text-3xl font-semibold leading-tight">Pronto para esta aventura?</span>
             <span className="font-display text-4xl font-semibold">{formatPrice(p.price_cents)}</span>
             <BuyButton product={p} withPrice />
-            <span className="text-sm text-ink">Pagamento seguro pela Kiwify.</span>
+            <span className="text-sm text-ink">Pagamento seguro.</span>
           </div>
         </div>
       </section>

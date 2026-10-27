@@ -9,7 +9,7 @@ type Props = {
 };
 
 /**
- * Botão "Comprar agora". Usa SEMPRE o link de checkout Kiwify do próprio produto.
+ * Botão "Comprar agora". Usa SEMPRE o link de checkout do próprio produto.
  * Sem link configurado, não há botão de compra (aparece "Em breve").
  */
 export function BuyButton({ product, withPrice = false, compact = false, className = "" }: Props) {

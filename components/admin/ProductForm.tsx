@@ -57,17 +57,17 @@ export function ProductForm({ product }: { product?: Product }) {
         </p>
       )}
 
-      <Section title="Checkout Kiwify">
+      <Section title="Link de compra (checkout)">
         <Field
-          label="URL DO CHECKOUT KIWIFY *"
-          hint="Link de checkout deste livro na Kiwify (ex.: https://pay.kiwify.com.br/xxxxxxx). Cada livro tem o seu próprio link. O link é validado ao guardar."
+          label="URL DO CHECKOUT *"
+          hint="Link de checkout deste livro na Hotmart (ex.: https://pay.hotmart.com/xxxxxxx). Cada livro tem o seu próprio link. O link é validado ao guardar."
           error={fe.kiwify_url}
         >
           <input
             name="kiwify_url"
             type="url"
             required
-            placeholder="https://pay.kiwify.com.br/"
+            placeholder="https://pay.hotmart.com/"
             defaultValue={v("kiwify_url", product?.kiwify_url ?? "")}
             className="field"
           />

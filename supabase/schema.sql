@@ -88,7 +88,7 @@ create policy "Admins apagam imagens" on storage.objects
 -- e depois autorizar esse e-mail como administrador (trocar pelo teu e-mail):
 -- insert into public.admins (email) values ('O_TEU_EMAIL_AQUI');
 
--- Livro de arranque (fica oculto até publicares no painel; o PDF deve estar na Kiwify antes)
+-- Livro de arranque (fica oculto até publicares no painel; o PDF deve estar na plataforma de pagamento antes)
 insert into public.products
   (slug, name, subtitle, category, age_min, age_max, pages, price_cents, format, short_description, description, benefits, included, faq, cover_url, preview_urls, kiwify_url, published, featured)
 values (
@@ -103,7 +103,7 @@ values (
   '[{"q":"Para que idade é recomendado?","a":"Para crianças dos 4 aos 7 anos, de preferência lido em conjunto com um adulto."},{"q":"Em que formato recebo o livro?","a":"Em PDF, com 30 páginas em A4 vertical. Pode ser lido no telemóvel, tablet ou computador, ou impresso."},{"q":"Como recebo o acesso?","a":"A entrega é digital e feita através da Kiwify, depois de concluída a compra."}]'::jsonb,
   '/produtos/luna/capa.jpg',
   array['/produtos/luna/preview-1.jpg','/produtos/luna/preview-2.jpg','/produtos/luna/preview-3.jpg','/produtos/luna/preview-4.jpg','/produtos/luna/preview-5.jpg','/produtos/luna/preview-6.jpg','/produtos/luna/preview-7.jpg','/produtos/luna/preview-8.jpg'],
-  'https://pay.kiwify.com/rMZmjLv',
+  null,
   false, true
 )
 on conflict (slug) do nothing;

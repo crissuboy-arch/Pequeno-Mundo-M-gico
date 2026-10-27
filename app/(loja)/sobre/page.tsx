@@ -40,7 +40,7 @@ export default function Sobre() {
         <div className="container-page flex flex-col gap-4 md:max-w-3xl">
           <h2 className="text-3xl sm:text-4xl">Como compras</h2>
           <p className="text-[17px] leading-relaxed text-[#3B3D69]">
-            Escolhes o produto, clicas em «Comprar agora» e segues para o pagamento seguro da Kiwify. A entrega é
+            Escolhes o produto, clicas em «Comprar agora» e segues para o pagamento seguro. A entrega é
             digital: depois de concluída a compra, recebes o acesso ao ficheiro.
           </p>
           <Link href="/loja" className="btn-primary mt-2 w-fit">Explorar os Livros</Link>

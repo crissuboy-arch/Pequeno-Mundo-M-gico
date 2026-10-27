@@ -13,7 +13,7 @@ export default function Privacidade() {
     <LegalPage title="Política de Privacidade" updated="26 de outubro de 2026">
       <h2>1. Responsável pelo tratamento</h2>
       <p>
-        {site.seller.name}, NIF {site.seller.nif}, {site.seller.address}. Contacto: {site.seller.email}.
+        {site.seller.name}, NIF {site.seller.nif}. Contacto: {site.seller.email}.
       </p>
 
       <h2>2. Que dados tratamos</h2>
@@ -24,8 +24,8 @@ export default function Privacidade() {
           segurança e funcionamento.
         </li>
         <li>
-          <strong>Compras:</strong> o pagamento e a entrega são feitos na Kiwify. Os dados da compra (nome, e-mail,
-          pagamento) são recolhidos e tratados pela Kiwify, de acordo com a sua própria política de privacidade. Este
+          <strong>Compras:</strong> o pagamento e a entrega são feitos numa plataforma de pagamento externa. Os dados da compra (nome, e-mail,
+          pagamento) são recolhidos e tratados por essa plataforma, de acordo com a sua própria política de privacidade. Este
           site não recebe nem guarda dados de cartões.
         </li>
         <li>

@@ -45,10 +45,10 @@ export function Footer() {
         </div>
         <div className="flex flex-col gap-1.5 border-t border-[#5B5E8A] pt-6 text-[13px] leading-relaxed text-[#C9CBE6]">
           <span>
-            {site.seller.name} · NIF {site.seller.nif} · {site.seller.address} · {site.seller.email}
+            {site.seller.name} · NIF {site.seller.nif} · {site.seller.email}
           </span>
           <span>
-            Pagamentos processados pela Kiwify. A loja não guarda dados de cartões. © {new Date().getFullYear()} {site.name}
+            Pagamentos processados por plataforma segura. A loja não guarda dados de cartões. © {new Date().getFullYear()} {site.name}
           </span>
         </div>
       </div>

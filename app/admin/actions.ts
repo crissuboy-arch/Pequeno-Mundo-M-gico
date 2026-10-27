@@ -43,7 +43,7 @@ export async function logout() {
   redirect("/admin/login");
 }
 
-/** Publicar / ocultar. Para publicar, o link Kiwify tem de existir e ser válido. */
+/** Publicar / ocultar. Para publicar, o link de checkout tem de existir e ser válido. */
 export async function togglePublish(formData: FormData) {
   const { supabase } = await requireAdmin();
   const id = str(formData, "id");

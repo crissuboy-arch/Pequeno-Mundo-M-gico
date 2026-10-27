@@ -13,7 +13,7 @@ export default function Termos() {
     <LegalPage title="Termos e Condições" updated="26 de outubro de 2026">
       <h2>1. Identificação do vendedor</h2>
       <p>
-        {site.seller.name}, NIF {site.seller.nif}, com sede em {site.seller.address}. Contacto: {site.seller.email}.
+        {site.seller.name}, NIF {site.seller.nif}. Contacto: {site.seller.email}.
         Este site apresenta os produtos do {site.name} ({site.url.replace("https://", "")}).
       </p>
 
@@ -27,13 +27,13 @@ export default function Termos() {
       <h2>3. Preços e pagamento</h2>
       <p>
         Os preços estão indicados em euros. Ao clicar em «Comprar agora», o cliente é encaminhado para o checkout da
-        Kiwify, plataforma que processa o pagamento. Este site não recolhe nem guarda dados de cartões ou de outros
+        plataforma de pagamento, que que processa o pagamento. Este site não recolhe nem guarda dados de cartões ou de outros
         meios de pagamento.
       </p>
 
       <h2>4. Entrega</h2>
       <p>
-        A entrega é digital e feita através da Kiwify, depois de concluída a compra. O comprador recebe o acesso ao
+        A entrega é digital e automática, depois de concluída a compra. O comprador recebe o acesso ao
         ficheiro nas condições indicadas no checkout e no e-mail de confirmação.
       </p>
 

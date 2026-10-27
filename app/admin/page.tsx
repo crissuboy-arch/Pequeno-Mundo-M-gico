@@ -43,7 +43,7 @@ export default async function AdminHome({ searchParams }: { searchParams: Promis
                   <th className="px-5 py-3">Produto</th>
                   <th className="px-5 py-3">Categoria</th>
                   <th className="px-5 py-3">Preço</th>
-                  <th className="px-5 py-3">Checkout Kiwify</th>
+                  <th className="px-5 py-3">Checkout</th>
                   <th className="px-5 py-3">Estado</th>
                   <th className="px-5 py-3 text-right">Ações</th>
                 </tr>

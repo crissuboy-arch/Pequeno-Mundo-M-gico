@@ -7,9 +7,9 @@ export const site = {
   seller: {
     name: process.env.NEXT_PUBLIC_SELLER_NAME || "Ofensiva Criativa",
     nif: process.env.NEXT_PUBLIC_SELLER_NIF || "298533634",
-    address: process.env.NEXT_PUBLIC_SELLER_ADDRESS || "[MORADA]",
-    email: process.env.NEXT_PUBLIC_SELLER_EMAIL || "[E-MAIL DE CONTACTO]",
+    address: process.env.NEXT_PUBLIC_SELLER_ADDRESS || "",
+    email: process.env.NEXT_PUBLIC_SELLER_EMAIL || "geralofensivacriativa@gmail.com",
   },
 };
 
-export const hasSellerEmail = Boolean(process.env.NEXT_PUBLIC_SELLER_EMAIL);
+export const hasSellerEmail = true;

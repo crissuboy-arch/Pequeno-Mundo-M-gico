@@ -2,9 +2,9 @@
 
 Loja virtual de produtos digitais (eBooks em PDF, livros de colorir, atividades e kits) para `pequenomundomagico.pt`.
 
-- **Pagamentos e entrega:** feitos pela **Kiwify**. A loja não tem carrinho nem checkout próprio e não guarda dados de cartões.
-- **Cada livro tem o seu próprio link de checkout Kiwify.** O botão «Comprar agora» usa sempre o link do próprio produto.
-- **Sem link Kiwify, não há compra:** o botão mostra «Em breve». Um produto só pode ser publicado com um link Kiwify válido.
+- **Pagamentos e entrega:** feitos pela **Hotmart**. A loja não tem carrinho nem checkout próprio e não guarda dados de cartões.
+- **Cada livro tem o seu próprio link de checkout Hotmart.** O botão «Comprar agora» usa sempre o link do próprio produto.
+- **Sem link Hotmart, não há compra:** o botão mostra «Em breve». Um produto só pode ser publicado com um link Hotmart válido.
 - **Stack:** Next.js 15 (App Router), TypeScript, Tailwind CSS, Supabase (catálogo, painel e imagens).
 
 ## Páginas
@@ -34,15 +34,15 @@ SEO incluído: títulos e descrições por página, URLs amigáveis (`/produto/<
 Na Vercel, definir `NEXT_PUBLIC_SELLER_NAME`, `NEXT_PUBLIC_SELLER_NIF`, `NEXT_PUBLIC_SELLER_ADDRESS` e `NEXT_PUBLIC_SELLER_EMAIL`. Aparecem no rodapé, nos Contactos e nas páginas legais.
 Rever também as páginas legais (Termos, Privacidade, Reembolso) e preencher o ponto marcado `[A CONFIRMAR PELO VENDEDOR]` na Política de Reembolso. Recomenda-se revisão jurídica.
 
-### 4. Kiwify
-1. Na Kiwify, criar o produto «Luna e a Estrela que Perdeu o Brilho» (€6,99), anexar o PDF final (30 páginas, A4 vertical) e copiar o **link de checkout**.
+### 4. Hotmart
+1. Na Hotmart, criar o produto «Luna e a Estrela que Perdeu o Brilho» (€6,99), anexar o PDF final (30 páginas, A4 vertical) e copiar o **link de checkout**.
 2. No painel: `https://pequenomundomagico.pt/admin` → **Editar** o livro → colar o link em **URL DO CHECKOUT KIWIFY** → marcar **Publicado na loja** → **Guardar**.
-3. Repetir para cada novo livro, cada um com o seu produto e link na Kiwify.
+3. Repetir para cada novo livro, cada um com o seu produto e link na Hotmart.
 
 ## Painel administrativo
 
 `/admin` (protegido por login, fora do Google). Permite:
-adicionar e editar eBooks · enviar capa e imagens de pré-visualização · alterar preços · definir o link individual da Kiwify (obrigatório e validado: só `https` e domínios da Kiwify) · escolher categoria e idade · publicar / ocultar · editar descrição, «o que inclui», valores e perguntas frequentes da página de vendas · marcar um produto em destaque na Home.
+adicionar e editar eBooks · enviar capa e imagens de pré-visualização · alterar preços · definir o link individual da Hotmart (obrigatório e validado: só `https` e domínios Hotmart) · escolher categoria e idade · publicar / ocultar · editar descrição, «o que inclui», valores e perguntas frequentes da página de vendas · marcar um produto em destaque na Home.
 
 ## Modo sem Supabase
 

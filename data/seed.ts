@@ -5,7 +5,7 @@ import { validateKiwifyUrl } from "@/lib/kiwify";
  * Catálogo de arranque. É usado apenas quando o Supabase NÃO está configurado.
  * Com o Supabase configurado, os produtos vêm do painel administrativo.
  */
-const lunaKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_LUNA || "https://pay.kiwify.com/rMZmjLv");
+const lunaKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_LUNA);
 
 export const seedProducts: Product[] = [
   {
@@ -33,7 +33,7 @@ export const seedProducts: Product[] = [
     faq: [
       { q: "Para que idade é recomendado?", a: "Para crianças dos 4 aos 7 anos, de preferência lido em conjunto com um adulto." },
       { q: "Em que formato recebo o livro?", a: "Em PDF, com 30 páginas em A4 vertical. Pode ser lido no telemóvel, tablet ou computador, ou impresso." },
-      { q: "Como recebo o acesso?", a: "A entrega é digital e feita através da Kiwify, depois de concluída a compra." },
+      { q: "Como recebo o acesso?", a: "A entrega é digital e automática, depois de concluída a compra." },
     ],
     cover_url: "/produtos/luna/capa.jpg",
     preview_urls: [1, 2, 3, 4, 5, 6, 7, 8].map((n) => `/produtos/luna/preview-${n}.jpg`),

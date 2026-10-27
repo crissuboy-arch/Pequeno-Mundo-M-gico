@@ -13,8 +13,8 @@ export const revalidate = 60;
 function Steps() {
   const steps = [
     { n: 1, bg: "bg-gold", t: "Escolhe o livro", d: "Vê a página do livro, as pré-visualizações e a idade recomendada." },
-    { n: 2, bg: "bg-blush", t: "Compra com segurança", d: "Ao clicar em Comprar agora segues para o pagamento seguro da Kiwify." },
-    { n: 3, bg: "bg-mint", t: "Recebe o acesso", d: "A entrega é digital e feita através da Kiwify, depois de concluída a compra." },
+    { n: 2, bg: "bg-blush", t: "Compra com segurança", d: "Ao clicar em Comprar agora segues para o pagamento seguro." },
+    { n: 3, bg: "bg-mint", t: "Recebe o acesso", d: "A entrega é digital e automática, depois de concluída a compra." },
   ];
   return (
     <section className="container-page flex flex-col gap-8 pb-20 pt-4">
@@ -136,7 +136,7 @@ export default async function HomePage() {
                   <BuyButton product={featured} />
                   <Link href={`/produto/${featured.slug}`} className="text-base font-extrabold underline">Ver detalhes</Link>
                 </div>
-                <p className="text-sm text-ink">Pagamento seguro pela Kiwify. A entrega é digital, depois de concluída a compra.</p>
+                <p className="text-sm text-ink">Pagamento seguro. A entrega é digital, depois de concluída a compra.</p>
               </div>
             </div>
             {featured.preview_urls.length > 0 && (

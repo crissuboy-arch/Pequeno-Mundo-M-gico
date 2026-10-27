@@ -25,13 +25,11 @@ export default function Contactos() {
         {site.seller.name}
         <br />
         NIF {site.seller.nif}
-        <br />
-        {site.seller.address}
       </p>
       <h2>Ajuda com uma compra</h2>
       <p>
         Indica no e-mail o nome do produto e o endereço de e-mail usado na compra. O pagamento e a entrega são tratados
-        pela Kiwify.
+        pela plataforma de pagamento.
       </p>
     </LegalPage>
   );
