@@ -35,7 +35,7 @@ Na Vercel, definir `NEXT_PUBLIC_SELLER_NAME`, `NEXT_PUBLIC_SELLER_NIF`, `NEXT_PU
 Rever também as páginas legais (Termos, Privacidade, Reembolso) e preencher o ponto marcado `[A CONFIRMAR PELO VENDEDOR]` na Política de Reembolso. Recomenda-se revisão jurídica.
 
 ### 4. Kiwify
-1. Na Kiwify, criar o produto «Luna e a Estrela que Perdeu o Brilho» (€4,99), anexar o PDF final (30 páginas, A4 vertical) e copiar o **link de checkout**.
+1. Na Kiwify, criar o produto «Luna e a Estrela que Perdeu o Brilho» (€6,99), anexar o PDF final (30 páginas, A4 vertical) e copiar o **link de checkout**.
 2. No painel: `https://pequenomundomagico.pt/admin` → **Editar** o livro → colar o link em **URL DO CHECKOUT KIWIFY** → marcar **Publicado na loja** → **Guardar**.
 3. Repetir para cada novo livro, cada um com o seu produto e link na Kiwify.
 

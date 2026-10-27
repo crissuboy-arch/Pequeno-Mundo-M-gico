@@ -5,7 +5,7 @@ import { validateKiwifyUrl } from "@/lib/kiwify";
  * Catálogo de arranque. É usado apenas quando o Supabase NÃO está configurado.
  * Com o Supabase configurado, os produtos vêm do painel administrativo.
  */
-const lunaKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_LUNA);
+const lunaKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_LUNA || "https://pay.kiwify.com/rMZmjLv");
 
 export const seedProducts: Product[] = [
   {
@@ -17,7 +17,7 @@ export const seedProducts: Product[] = [
     age_min: 4,
     age_max: 7,
     pages: 30,
-    price_cents: 499,
+    price_cents: 699,
     format: "eBook PDF · A4 vertical",
     short_description:
       "Uma aventura encantadora sobre amizade, coragem, empatia e autoconfiança, com atividades divertidas.",
