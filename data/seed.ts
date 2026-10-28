@@ -10,6 +10,7 @@ const colorirKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_COLORIR || "https
 const atividadesKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_ATIVIDADES || "https://pay.hotmart.com/J108230090O");
 const anaKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_ANA || "https://pay.hotmart.com/Q108230287O");
 const amigasKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_AMIGAS || "https://pay.hotmart.com/G108230482N");
+const queijoKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_QUEIJO || "https://pay.hotmart.com/Q108237259C");
 const lunaKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_LUNA || "https://pay.kiwify.com/rMZmjLv");
 
 export const seedProducts: Product[] = [
@@ -215,5 +216,38 @@ export const seedProducts: Product[] = [
     published: true,
     featured: false,
     created_at: "2026-10-28T12:00:00Z",
+  },
+  {
+    id: "seed-a-caca-ao-queijo-gigante",
+    slug: "a-caca-ao-queijo-gigante",
+    name: "A Caça ao Queijo Gigante",
+    subtitle: "Uma história hilariante sobre um gato trapalhão, um rato esperto e um queijo que não para quieto",
+    category: "historias-infantis",
+    age_min: 3,
+    age_max: 6,
+    pages: 25,
+    price_cents: 990,
+    format: "eBook PDF · formato quadrado",
+    short_description:
+      "O Bigodes é um gato grande e trapalhão. O Migas é um ratinho pequeno e muito esperto. Quando chega a casa uma roda de queijo gigante para a festa do fim de semana, os dois querem ficar com ela só para si. Mas cada armadilha falha contra quem a montou, o queijo foge a rolar pela casa fora até ao jardim, e só juntos é que conseguem levá-lo. Uma história muito engraçada sobre partilha, amizade e trabalho em equipa.",
+    description:
+      "Numa manhã de sábado, os donos da casa chegam com uma surpresa: uma roda de queijo ENORME para a festa do fim de semana. O cheiro espalha-se pela casa inteira — e por dois narizes muito atentos.\n\nO Bigodes, o gato grande e trapalhão de bigodes enormes, quer o queijo só para si. O Migas, o ratinho esperto de lenço vermelho, também. Começa então a caça ao queijo gigante: o Bigodes monta uma armadilha de caixa que cai em cima da cabeça dele; o Migas ata uma corda ao queijo que se enrola toda sem o queijo se mexer; o Bigodes disfarça-se de queijo e leva uma trinca do Migas.\n\nMas o melhor ainda está para vir: o queijo começa a rolar! Desce o corredor, salta as escadas — boing, boing! — com o Migas em cima como se fosse um cavalo, e vai parar ao jardim. O queijo é pesado demais para o Migas e escorregadio demais para o Bigodes. Só quando os dois empurram juntos é que o queijo volta para a cozinha. E aí vem a parte mais difícil... e a mais bonita: partir o queijo e partilhá-lo — um pedaço para cada um e um pedaço grande para a festa.\n\nNo fim, barrigas cheias, um acordo de sócios do queijo e, na manhã seguinte, só migalhas e dois bigodes muito suspeitos. Uma história para rir em voz alta em família, com 3 atividades finais: contar as armadilhas, desenhar um queijo gigante e inventar uma armadilha bem pateta para um queijo fugitivo.",
+    benefits: ["Humor e diversão em família", "Partilha e amizade", "Trabalho em equipa", "Leitura em voz alta"],
+    included: [
+      "História ilustrada a cores com o Bigodes e o Migas",
+      "20 páginas de história + 3 atividades finais",
+      "Ficheiro PDF com 25 páginas, em formato quadrado",
+    ],
+    faq: [
+      { q: "Para que idade é recomendado?", a: "Para crianças dos 3 aos 6 anos, de preferência lido em conjunto com um adulto." },
+      { q: "Em que formato recebo o livro?", a: "Em PDF, com 25 páginas em formato quadrado. Pode ser lido no telemóvel, tablet ou computador, ou impresso." },
+      { q: "Como recebo o acesso?", a: "A entrega é digital e automática, depois de concluída a compra." },
+    ],
+    cover_url: "/produtos/a-caca-ao-queijo-gigante/capa.jpg",
+    preview_urls: [1, 2, 3, 4, 5].map((n) => `/produtos/a-caca-ao-queijo-gigante/preview-${n}.jpg`),
+    kiwify_url: queijoKiwify.ok ? queijoKiwify.url : null,
+    published: true,
+    featured: false,
+    created_at: "2026-10-28T20:10:00Z",
   },
 ];
