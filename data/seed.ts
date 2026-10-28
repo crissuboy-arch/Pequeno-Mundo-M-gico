@@ -8,6 +8,7 @@ import { validateKiwifyUrl } from "@/lib/kiwify";
 const fioKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_FIO || "https://pay.hotmart.com/S108229780E");
 const colorirKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_COLORIR || "https://pay.hotmart.com/H108229914M");
 const atividadesKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_ATIVIDADES || "https://pay.hotmart.com/J108230090O");
+const anaKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_ANA || "https://pay.hotmart.com/Q108230287O");
 const lunaKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_LUNA || "https://pay.kiwify.com/rMZmjLv");
 
 export const seedProducts: Product[] = [
@@ -144,6 +145,39 @@ export const seedProducts: Product[] = [
     cover_url: "/produtos/atividades-divertidas/capa.jpg",
     preview_urls: [1, 2, 3, 4, 5].map((n) => `/produtos/atividades-divertidas/preview-${n}.jpg`),
     kiwify_url: atividadesKiwify.ok ? atividadesKiwify.url : null,
+    published: true,
+    featured: false,
+    created_at: "2026-10-28T12:00:00Z",
+  },
+  {
+    id: "seed-o-presente-da-ana",
+    slug: "o-presente-da-ana",
+    name: "O Presente da Ana",
+    subtitle: "A Ana nunca tinha ganho um presente de Natal — até à manhã em que a aldeia lhe mostrou quanto a ama",
+    category: "historias-infantis",
+    age_min: 3,
+    age_max: 6,
+    pages: 26,
+    price_cents: 990,
+    format: "eBook PDF · formato quadrado",
+    short_description:
+      "A Ana nunca tinha ganho um presente de Natal. Mas ela dá luz à aldeia com as suas estrelas de papel e a sua bondade. Na manhã de Natal, uma surpresa à porta vai mudar tudo.",
+    description:
+      "A Ana vive com a avó numa casa pequena de uma aldeia. É uma menina alegre, que canta, ajuda a avó e faz estrelas de papel para enfeitar a janela. Mas há uma coisa que a Ana nunca teve: um presente de Natal.\n\nTodos os anos, a Ana vê as outras crianças a abrir presentes — e não se queixa. Na véspera de Natal, ela faz um último gesto generoso: dá a sua estrela dourada mais bonita ao senhor António, o vizinho velho que vive sozinho.\n\nNa manhã de Natal, há uma surpresa à porta de casa: um presente para a Ana, deixado pelos vizinhos da aldeia, que viram a bondade dela durante todo o ano. Uma boneca de pano feita à mão, com um casaco vermelho igual ao dela, e um bilhete: «Para a Ana, que dá luz ao nosso Natal.»\n\nUma história emocionante e luminosa, para ler em voz alta em família, sobre bondade, gratidão e o melhor presente de todos: ser vista e amada. Sem Pai Natal como herói — o presente vem da bondade das pessoas. No fim, uma atividade simples: desenhar o presente que darias a alguém de quem gostas.",
+    benefits: ["Bondade e gratidão", "Autoestima: ser vista e amada", "Espírito de Natal em família", "Leitura em voz alta"],
+    included: [
+      "História ilustrada a cores com a Ana, a avó e o senhor António",
+      "24 páginas de história + atividade final «Desenha o teu presente!»",
+      "Ficheiro PDF com 26 páginas, em formato quadrado",
+    ],
+    faq: [
+      { q: "Para que idade é recomendado?", a: "Para crianças dos 3 aos 6 anos, de preferência lido em conjunto com um adulto." },
+      { q: "Em que formato recebo o livro?", a: "Em PDF, com 26 páginas em formato quadrado. Pode ser lido no telemóvel, tablet ou computador, ou impresso." },
+      { q: "Como recebo o acesso?", a: "A entrega é digital e automática, depois de concluída a compra." },
+    ],
+    cover_url: "/produtos/o-presente-da-ana/capa.jpg",
+    preview_urls: [1, 2, 3, 4, 5].map((n) => `/produtos/o-presente-da-ana/preview-${n}.jpg`),
+    kiwify_url: anaKiwify.ok ? anaKiwify.url : null,
     published: true,
     featured: false,
     created_at: "2026-10-28T12:00:00Z",
