@@ -6,6 +6,7 @@ import { validateKiwifyUrl } from "@/lib/kiwify";
  * Com o Supabase configurado, os produtos vêm do painel administrativo.
  */
 const fioKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_FIO || "https://pay.hotmart.com/S108229780E");
+const colorirKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_COLORIR || "https://pay.hotmart.com/H108229914M");
 const lunaKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_LUNA || "https://pay.kiwify.com/rMZmjLv");
 
 export const seedProducts: Product[] = [
@@ -76,5 +77,39 @@ export const seedProducts: Product[] = [
     published: true,
     featured: true,
     created_at: "2026-10-28T09:00:00Z",
+  },
+  {
+    id: "seed-livro-de-colorir",
+    slug: "pequeno-mundo-magico-livro-de-colorir",
+    name: "Pequeno Mundo Mágico — Livro de Colorir",
+    subtitle: "22 desenhos para pintar com o Pedro e o Tóbi",
+    category: "livros-de-colorir",
+    age_min: 3,
+    age_max: 7,
+    pages: 24,
+    price_cents: 500,
+    format: "eBook PDF · A4 vertical",
+    short_description:
+      "22 desenhos com contornos grossos e simples, prontos a pintar com o Pedro e o Tóbi. Imprime em casa as vezes que quiseres.",
+    description:
+      "Pega nos lápis e vem pintar com o Pedro e o Tóbi!\n\nNeste livro de colorir vais encontrar 22 desenhos com contornos grossos e simples, feitos para mãos pequenas: o Pedro e o Tóbi no jardim, na praia e na floresta, um dinossauro simpático, um unicórnio nas nuvens, um arco-íris, um panda, uma capivara, um gatinho, borboletas, abelhas, um comboio, um carro, balões, o Natal, uma festa de aniversário e muito mais.\n\nTodos os desenhos são originais do Pequeno Mundo Mágico, sem personagens de outras marcas. No fim do livro há uma página livre para a criança desenhar o que quiser.",
+    benefits: ["Criatividade", "Motricidade fina", "Momentos em família", "Imprime as vezes que quiseres"],
+    included: [
+      "22 páginas de colorir com o Pedro e o Tóbi",
+      "Capa a cores",
+      "Página final livre para desenhar",
+      "Ficheiro PDF em A4, pronto a imprimir",
+    ],
+    faq: [
+      { q: "Para que idade é recomendado?", a: "Para crianças dos 3 aos 7 anos, de preferência a pintar em conjunto com um adulto." },
+      { q: "Em que formato recebo o livro?", a: "Em PDF, com 24 páginas em A4 vertical. Pode ser impresso em casa as vezes que quiseres." },
+      { q: "Como recebo o acesso?", a: "A entrega é digital e automática, depois de concluída a compra." },
+    ],
+    cover_url: "/produtos/livro-de-colorir/capa.jpg",
+    preview_urls: [1, 2, 3, 4, 5, 6].map((n) => `/produtos/livro-de-colorir/preview-${n}.jpg`),
+    kiwify_url: colorirKiwify.ok ? colorirKiwify.url : null,
+    published: true,
+    featured: false,
+    created_at: "2026-10-28T11:00:00Z",
   },
 ];
