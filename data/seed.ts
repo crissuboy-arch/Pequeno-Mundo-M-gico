@@ -7,6 +7,7 @@ import { validateKiwifyUrl } from "@/lib/kiwify";
  */
 const fioKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_FIO || "https://pay.hotmart.com/S108229780E");
 const colorirKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_COLORIR || "https://pay.hotmart.com/H108229914M");
+const atividadesKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_ATIVIDADES || "https://pay.hotmart.com/J108230090O");
 const lunaKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_LUNA || "https://pay.kiwify.com/rMZmjLv");
 
 export const seedProducts: Product[] = [
@@ -111,5 +112,40 @@ export const seedProducts: Product[] = [
     published: true,
     featured: false,
     created_at: "2026-10-28T11:00:00Z",
+  },
+  {
+    id: "seed-50-atividades",
+    slug: "50-atividades-divertidas-para-criancas",
+    name: "50 Atividades Divertidas para Crianças",
+    subtitle: "50 atividades para aprender a brincar, dos 3 aos 7 anos",
+    category: "atividades-educativas",
+    age_min: 3,
+    age_max: 7,
+    pages: 51,
+    price_cents: 690,
+    format: "eBook PDF · A4 vertical",
+    short_description:
+      "50 atividades para imprimir em casa, do mais fácil para o mais difícil: labirintos, ligar os pontos, encontrar as diferenças, contar, traçar, sombras, padrões e uma caça ao tesouro final.",
+    description:
+      "50 atividades para aprender a brincar!\n\nNeste livro vais encontrar 50 páginas de atividades para imprimir em casa, organizadas do mais fácil para o mais difícil, para crianças dos 3 aos 7 anos: labirintos, ligar os pontos, encontrar as diferenças, contar objetos, traçar linhas e formas, descobrir a sombra certa, completar padrões e sequências, ligar cada animal à sua casa e à sua comida, pintar com números, somar a brincar e uma caça ao tesouro final.\n\nSem personagens com nome, só animais e objetos genéricos. Imprime as vezes que quiseres.",
+    benefits: ["Raciocínio lógico", "Concentração", "Motricidade fina", "Imprime as vezes que quiseres"],
+    included: [
+      "50 páginas de atividades",
+      "Labirintos, ligar os pontos e encontrar as diferenças",
+      "Contar, traçar, sombras e padrões",
+      "Caça ao tesouro final",
+      "Ficheiro PDF em A4, pronto a imprimir",
+    ],
+    faq: [
+      { q: "Para que idade é recomendado?", a: "Para crianças dos 3 aos 7 anos, de preferência a brincar em conjunto com um adulto." },
+      { q: "Em que formato recebo o livro?", a: "Em PDF, com 51 páginas em A4 vertical. Pode ser impresso em casa as vezes que quiseres." },
+      { q: "Como recebo o acesso?", a: "A entrega é digital e automática, depois de concluída a compra." },
+    ],
+    cover_url: "/produtos/atividades-divertidas/capa.jpg",
+    preview_urls: [1, 2, 3, 4, 5].map((n) => `/produtos/atividades-divertidas/preview-${n}.jpg`),
+    kiwify_url: atividadesKiwify.ok ? atividadesKiwify.url : null,
+    published: true,
+    featured: false,
+    created_at: "2026-10-28T12:00:00Z",
   },
 ];
