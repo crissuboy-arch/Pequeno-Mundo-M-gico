@@ -9,6 +9,7 @@ const fioKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_FIO || "https://pay.h
 const colorirKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_COLORIR || "https://pay.hotmart.com/H108229914M");
 const atividadesKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_ATIVIDADES || "https://pay.hotmart.com/J108230090O");
 const anaKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_ANA || "https://pay.hotmart.com/Q108230287O");
+const amigasKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_AMIGAS || "https://pay.hotmart.com/G108230482N");
 const lunaKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_LUNA || "https://pay.kiwify.com/rMZmjLv");
 
 export const seedProducts: Product[] = [
@@ -178,6 +179,39 @@ export const seedProducts: Product[] = [
     cover_url: "/produtos/o-presente-da-ana/capa.jpg",
     preview_urls: [1, 2, 3, 4, 5].map((n) => `/produtos/o-presente-da-ana/preview-${n}.jpg`),
     kiwify_url: anaKiwify.ok ? anaKiwify.url : null,
+    published: true,
+    featured: false,
+    created_at: "2026-10-28T12:00:00Z",
+  },
+  {
+    id: "seed-amigas-para-sempre",
+    slug: "amigas-para-sempre",
+    name: "Amigas para Sempre",
+    subtitle: "Uma história sobre amizade verdadeira, que nem a distância nem o tempo conseguem apagar",
+    category: "historias-infantis",
+    age_min: 4,
+    age_max: 8,
+    pages: 26,
+    price_cents: 990,
+    format: "eBook PDF · formato quadrado",
+    short_description:
+      "A Sofia e a Inês conhecem-se aos 5 anos no parque e tornam-se as melhores amigas. Quando a família da Inês se muda para outra cidade, a distância separa-as — mas a amizade verdadeira não acaba. Aos 12 anos, um reencontro no parque de sempre vai mostrar que há amizades que são mesmo para sempre.",
+    description:
+      "A Sofia e a Inês tinham 5 anos quando se conheceram no parque, junto aos baloiços. A partir desse dia, foram as melhores amigas: brincavam todos os dias, partilhavam segredos e fizeram pulseiras da amizade uma para a outra, com a promessa de «amigas para sempre».\n\nQuando tinham 9 anos, chegou uma notícia triste: o pai da Inês arranjou trabalho noutra cidade e a família tinha de se mudar. Despediram-se no parque, com a promessa de se escreverem sempre.\n\nPassaram 3 anos sem se verem. Escreveram cartas, guardaram as pulseiras e nunca se esqueceram uma da outra. Até que, aos 12 anos, por acaso, as duas foram ao mesmo parque de sempre — e viram-se ao longe. Foi a pulseira da amizade, que as duas ainda usavam, que as fez reconhecerem-se. Correram uma para a outra e abraçaram-se com força.\n\nUma história ternurenta e luminosa, para ler em voz alta em família, sobre amizade verdadeira, saudade, distância e reencontros. Sem dramas de adultos, sem sustos, sem moralismos compridos. No fim, uma atividade simples: desenhar a melhor amiga ou o melhor amigo e escrever o que mais gostam de fazer juntos.",
+    benefits: ["Amizade verdadeira", "Lidar com a distância e a saudade", "Empatia e partilha", "Leitura em voz alta"],
+    included: [
+      "História ilustrada a cores com a Sofia e a Inês",
+      "24 páginas de história + atividade final «Desenha a tua melhor amiga!»",
+      "Ficheiro PDF com 26 páginas, em formato quadrado",
+    ],
+    faq: [
+      { q: "Para que idade é recomendado?", a: "Para crianças dos 4 aos 8 anos, de preferência lido em conjunto com um adulto." },
+      { q: "Em que formato recebo o livro?", a: "Em PDF, com 26 páginas em formato quadrado. Pode ser lido no telemóvel, tablet ou computador, ou impresso." },
+      { q: "Como recebo o acesso?", a: "A entrega é digital e automática, depois de concluída a compra." },
+    ],
+    cover_url: "/produtos/amigas-para-sempre/capa.jpg",
+    preview_urls: [1, 2, 3, 4, 5].map((n) => `/produtos/amigas-para-sempre/preview-${n}.jpg`),
+    kiwify_url: amigasKiwify.ok ? amigasKiwify.url : null,
     published: true,
     featured: false,
     created_at: "2026-10-28T12:00:00Z",
