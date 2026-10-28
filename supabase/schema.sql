@@ -103,7 +103,7 @@ values (
   '[{"q":"Para que idade é recomendado?","a":"Para crianças dos 4 aos 7 anos, de preferência lido em conjunto com um adulto."},{"q":"Em que formato recebo o livro?","a":"Em PDF, com 30 páginas em A4 vertical. Pode ser lido no telemóvel, tablet ou computador, ou impresso."},{"q":"Como recebo o acesso?","a":"A entrega é digital e feita através da Kiwify, depois de concluída a compra."}]'::jsonb,
   '/produtos/luna/capa.jpg',
   array['/produtos/luna/preview-1.jpg','/produtos/luna/preview-2.jpg','/produtos/luna/preview-3.jpg','/produtos/luna/preview-4.jpg','/produtos/luna/preview-5.jpg','/produtos/luna/preview-6.jpg','/produtos/luna/preview-7.jpg','/produtos/luna/preview-8.jpg'],
-  null,
+  'https://pay.kiwify.com/rMZmjLv',
   false, true
 )
 on conflict (slug) do nothing;

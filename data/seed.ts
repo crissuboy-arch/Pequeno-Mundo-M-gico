@@ -6,7 +6,7 @@ import { validateKiwifyUrl } from "@/lib/kiwify";
  * Com o Supabase configurado, os produtos vêm do painel administrativo.
  */
 const fioKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_FIO || "https://pay.hotmart.com/S108229780E");
-const lunaKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_LUNA);
+const lunaKiwify = validateKiwifyUrl(process.env.KIWIFY_URL_LUNA || "https://pay.kiwify.com/rMZmjLv");
 
 export const seedProducts: Product[] = [
   {
